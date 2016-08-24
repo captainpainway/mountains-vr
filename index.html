@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mountains</title>
+    <meta name="description" content="Mountains">
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="mountains" src="mountains.dae"></a-asset-item>
+        </a-assets>
+      <a-entity collada-model="#mountains" scale="2 2.5 2"></a-entity>
+      <a-sky color="#7ec0ee"></a-sky>
+      <a-entity position="0 1.8 0">
+        <a-camera></a-camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
