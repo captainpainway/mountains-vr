@@ -10,12 +10,12 @@
     <a-scene>
         <a-assets>
             <a-asset-item id="mountains" src="mountains.dae"></a-asset-item>
+            <img id="sky" src="purplesky.jpg">
         </a-assets>
-      <a-entity collada-model="#mountains" scale="2 2.5 2"></a-entity>
-      <a-sky color="#7ec0ee"></a-sky>
-      <a-entity position="0 1.8 0">
-        <a-camera></a-camera>
-      </a-entity>
+      <a-entity collada-model="#mountains"></a-entity>
+      <a-sky src="#sky"></a-sky>
+      <a-entity light="type: ambient; color: #b38b93"></a-entity>
+      <a-entity light="type: directional; color: #b38b93; intensity: 0.9" position="-0.5 1 1"></a-entity>
     </a-scene>
   </body>
 </html>
