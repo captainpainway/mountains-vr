@@ -12,8 +12,11 @@
             <a-asset-item id="mountains" src="mountains.dae"></a-asset-item>
             <img id="sky" src="purplesky.jpg">
         </a-assets>
-      <a-entity collada-model="#mountains"></a-entity>
-      <a-sky src="#sky"></a-sky>
+      <a-entity collada-model="#mountains" rotation="0 10 0"></a-entity>
+      <a-entity geometry="primitive: sphere; radius: 50"
+          material="src: #sky"
+          position="0 -25 0"
+          scale="1 1 -1"></a-entity>
       <a-entity light="type: ambient; color: #b38b93"></a-entity>
       <a-entity light="type: directional; color: #b38b93; intensity: 0.9" position="-0.5 1 1"></a-entity>
     </a-scene>
